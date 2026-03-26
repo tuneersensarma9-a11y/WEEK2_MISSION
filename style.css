@@ -125,3 +125,11 @@ li {
     text-align: center;
   }
 }
+/* For Negative Balance */
+.negative {
+  color: red;
+}
+
+.positive {
+  color: #00ff00;
+}
