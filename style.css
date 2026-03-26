@@ -1,0 +1,127 @@
+body {
+  font-family: Arial;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  background: 
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.15)),
+    url('IMG.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+}
+
+/* 🔥 Main card */
+.container {
+  display: flex;             
+  gap: 30px;
+
+  background: rgba(0, 0, 0, 0.6);
+  padding: 25px 35px;
+  border-radius: 12px;
+
+  text-align: left;           
+    
+}
+
+/* 🔥 Make inputs equal width */
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: none;
+}
+
+/* Button style */
+button {
+  background-color: #3038cc;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Expense list */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Left side */
+.left {
+  width: 300px;
+}
+
+/* Right side */
+.right {
+  width: 250px;
+  max-height: 400px;
+  overflow-y: auto;
+
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+}
+/*Trash Button Style*/
+li {
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: darkred;
+}
+/*Chart Orientation*/
+#expenseChart {
+  width: 100% !important;
+  max-width: 300px;
+  margin: 20px auto;
+}
+/* Mobile View */
+@media (max-width: 768px) {
+
+  .container {
+    flex-direction: column;   
+    align-items: center;
+    padding: 20px;
+    width: 90%;
+  max-width: 900px;
+  }
+
+  .left, .right {
+    width: 100%;              
+  }
+
+  .right {
+    max-height: none;        
+    margin-top: 20px;
+  }
+
+  input, button {
+    width: 100%;
+  }
+
+  h2, h3 {
+    text-align: center;
+  }
+}
