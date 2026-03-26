@@ -17,7 +17,7 @@ body {
   color: white;
 }
 
-/* 🔥 Main card */
+/* Main card */
 .container {
   display: flex;             
   gap: 30px;
@@ -30,7 +30,7 @@ body {
     
 }
 
-/* 🔥 Make inputs equal width */
+/* Make inputs equal width */
 input, button {
   width: 100%;
   padding: 10px;
